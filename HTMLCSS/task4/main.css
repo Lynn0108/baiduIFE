@@ -1,0 +1,32 @@
+*{margin: 0;padding: 0;}
+
+#bigbox {
+	width: 730px;
+	height: 580px;
+	border: 2px solid #CCC;
+	position: relative;
+}
+
+#graybox {
+	width: 400px;
+	height: 200px;
+	background-color: #CCC;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin: -100px 0 0 -200px;
+}
+
+#upcircle, #downcircle {
+	width: 50px;
+	height: 50px;
+	background-color: #FC0;
+}
+#upcircle {
+	border-radius: 0 0 100% 0;
+}
+#downcircle {
+	border-radius: 100% 0 0 0;
+	top: 200px;
+	margin: 100px 0 0 auto;
+}
