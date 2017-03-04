@@ -6,7 +6,7 @@
 	overflow: auto;
 	margin: 20px;
 	display: inline-block; /*这是为什么？*/
-
+}
 img {
 	width: 80px;
 	height: 80px;
