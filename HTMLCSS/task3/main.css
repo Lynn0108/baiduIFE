@@ -1,0 +1,57 @@
+*{margin: 0;padding: 0;}
+
+#tBox {
+	background-color: #eee;
+	border: 1px solid #999;
+	overflow: auto;
+	margin: 20px;
+	display: inline-block; /*这是为什么？*/
+
+img {
+	width: 80px;
+	height: 80px;
+	border: 1px solid #999;
+	outline: none;
+	margin: 20px 20px 0 20px;
+}
+.last {
+	margin-bottom: 20px;
+}
+
+#teamname {
+	background-color: #FFF;
+	width: 200px;
+	border: 1px solid #999;
+	float: left;
+	margin: 20px;
+}
+#teamname span {
+	display: inline-block;
+	width: 98px;
+	text-align: center;
+	padding-top: 20px;
+}
+#teamlogo {
+	float: left;
+	margin: 20px 0 20px 20px;
+}
+
+
+#teammates {
+	width: 120px;
+	background-color: #FFF;
+	border: 1px solid #999;
+	float: right;
+	margin: 20px;
+}
+
+#teaminfo {
+	border: 1px solid #999;
+	background-color: #FFF;
+	margin: 20px 183px 20px 243px;
+}
+#teaminfo p {
+	text-indent: 2em;
+	line-height: 1.5em;
+	padding: 20px 20px 0 20px;
+}
