@@ -50,8 +50,7 @@ window.onload = function () {
 			return false;
 		}
 		arr.shift(arr[arr.length - 1]);
-		var firstNode = ArrP.firstChild;
-		ArrP.removeChild(firstNode);
+		ArrP.removeChild(ArrP.childNodes[0]);
 	}
 	btns[3].onclick = function () {
 		if (arr.length == 0) {
