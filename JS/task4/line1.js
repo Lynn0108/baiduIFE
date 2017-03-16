@@ -18,6 +18,9 @@ window.onload = function () {
 		}
 		arr.unshift(num);
 		var numNode = document.createElement("span");
+		numNode.onclick = function(){
+                document.getElementById('arr').removeChild(this);
+        }
 		if (arr.length == 1) {
 			document.getElementById('arr').appendChild(numNode);
 		} else {
@@ -36,6 +39,9 @@ window.onload = function () {
 		}
 		arr.push(num);
 		var numNode = document.createElement("span");
+		numNode.onclick = function(){
+                document.getElementById('arr').removeChild(this);
+        }
 		document.getElementById('arr').appendChild(numNode);
 		numNode.innerHTML = num;
 	}
@@ -58,6 +64,4 @@ window.onload = function () {
 		var lastNode = document.getElementById('arr').lastChild;
 		document.getElementById('arr').removeChild(lastNode);
 	}
-
-
 }
