@@ -6,7 +6,7 @@ window.onload = function () {
 	var arr = new Array();
 	//清空输入框
 	document.getElementById('num').value = "";
-	//给按钮绑定事件
+	//---给按钮绑定事件---
 	//leftIn
 	btns[0].onclick = function () {
 		var num = document.getElementById('num').value;
