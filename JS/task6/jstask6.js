@@ -38,6 +38,7 @@ window.onload = function () {
 	//查询
 	find_btn.onclick = function () {
 		var findT = findtxt.value;//获取查询框内容
+		var patt1 = new RegExp(findT);
 		//清空上次查询结果
 		if (spans) {
 			for (var i = 0; i < spans.length; i++) {
@@ -47,7 +48,7 @@ window.onload = function () {
 			findflag = false;
 		}
 		for (var i = 0; i < show_txt.childNodes.length; i++) {
-			if(show_txt.childNodes[i].innerHTML === findT){
+			if(patt1.test(show_txt.childNodes[i].innerHTML)){
 				show_txt.childNodes[i].style.backgroundColor = '#F00';
 				show_txt.childNodes[i].style.color = "#FFF";
 				findflag = true;
